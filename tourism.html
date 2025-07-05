@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LINK GROUP - خدمات السياحة</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@300;400;500;600;700&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="src/assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="container">
+                <div class="nav-brand">
+                    <img src="src/assets/images/link_group_logo_globe.png" alt="LINK GROUP" class="logo">
+                </div>
+                
+                <div class="nav-menu" id="nav-menu">
+                    <ul class="nav-list">
+                        <li class="nav-item">
+                            <a href="index.html#home" class="nav-link" data-ar="الرئيسية" data-en="Home">الرئيسية</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a href="#services" class="nav-link active" data-ar="الخدمات" data-en="Services">الخدمات</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="tourism.html" data-ar="خدمات السياحة" data-en="Tourism Services">خدمات السياحة</a></li>
+                                <li><a href="education.html" data-ar="خدمات تعليمية" data-en="Educational Services">خدمات تعليمية</a></li>
+                                <li><a href="investment.html" data-ar="خدمات استثمارية" data-en="Investment Services">خدمات استثمارية</a></li>
+                                <li><a href="residency.html" data-ar="تجهيز ملفات الإقامة" data-en="Residency Applications">تجهيز ملفات الإقامة</a></li>
+                                <li><a href="insurance.html" data-ar="خدمات التأمينات" data-en="Insurance Services">خدمات التأمينات</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a href="index.html#about" class="nav-link" data-ar="من نحن" data-en="About Us">من نحن</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="index.html#contact" class="nav-link" data-ar="تواصل معنا" data-en="Contact Us">تواصل معنا</a>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="nav-controls">
+                    <button class="lang-toggle" id="lang-toggle">
+                        <span class="lang-text">EN</span>
+                    </button>
+                    <button class="nav-toggle" id="nav-toggle">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="tourism-details" class="service-details">
+            <div class="container">
+                <h2 class="section-title" data-ar="خدمات السياحة" data-en="Tourism Services">خدمات السياحة</h2>
+                
+                <!-- Image Gallery -->
+                <div class="service-gallery">
+                    <div class="gallery-main">
+                        <img src="src/assets/images/tourism.jpg" alt="خدمات السياحة" class="gallery-main-image">
+                    </div>
+                    <div class="gallery-thumbnails">
+                        <img src="src/assets/images/tourism-booking.jpg" alt="حجز السفر" class="gallery-thumb active" onclick="changeMainImage(this)">
+                        <img src="src/assets/images/vacation-planning.jpg" alt="تخطيط العطلات" class="gallery-thumb" onclick="changeMainImage(this)">
+                        <img src="src/assets/images/hotel-reservation.jpg" alt="حجز الفنادق" class="gallery-thumb" onclick="changeMainImage(this)">
+                    </div>
+                </div>
+
+                <div class="service-content-enhanced">
+                    <div class="service-description">
+                        <p data-ar="نقدم مجموعة شاملة من خدمات السياحة التي تلبي جميع احتياجاتك، بدءًا من التخطيط وحتى العودة. سواء كنت تبحث عن مغامرة، استرخاء، أو رحلة ثقافية، فإننا نضمن لك تجربة لا تُنسى." data-en="We offer a comprehensive range of tourism services that meet all your needs, from planning to return. Whether you are looking for adventure, relaxation, or a cultural trip, we guarantee you an unforgettable experience.">نقدم مجموعة شاملة من خدمات السياحة التي تلبي جميع احتياجاتك، بدءًا من التخطيط وحتى العودة. سواء كنت تبحث عن مغامرة، استرخاء، أو رحلة ثقافية، فإننا نضمن لك تجربة لا تُنسى.</p>
+                    </div>
+
+                    <div class="service-features">
+                        <h3 data-ar="خدماتنا المتميزة" data-en="Our Distinguished Services">خدماتنا المتميزة</h3>
+                        <div class="features-grid">
+                            <div class="feature-card" onclick="contactWhatsApp('تنظيم الرحلات')">
+                                <div class="feature-icon">
+                                    <i class="fas fa-plane"></i>
+                                </div>
+                                <h4 data-ar="تنظيم الرحلات" data-en="Trip Organization">تنظيم الرحلات</h4>
+                                <p data-ar="تنظيم الرحلات السياحية الفردية والجماعية" data-en="Organization of individual and group tourist trips">تنظيم الرحلات السياحية الفردية والجماعية</p>
+                            </div>
+                            <div class="feature-card" onclick="contactWhatsApp('حجز الفنادق')">
+                                <div class="feature-icon">
+                                    <i class="fas fa-hotel"></i>
+                                </div>
+                                <h4 data-ar="حجز الفنادق" data-en="Hotel Booking">حجز الفنادق</h4>
+                                <p data-ar="حجوزات الفنادق والمنتجعات الفاخرة" data-en="Bookings for luxury hotels and resorts">حجوزات الفنادق والمنتجعات الفاخرة</p>
+                            </div>
+                            <div class="feature-card" onclick="contactWhatsApp('تذاكر الطيران')">
+                                <div class="feature-icon">
+                                    <i class="fas fa-ticket-alt"></i>
+                                </div>
+                                <h4 data-ar="تذاكر الطيران" data-en="Flight Tickets">تذاكر الطيران</h4>
+                                <p data-ar="تذاكر الطيران لجميع الوجهات" data-en="Flight tickets to all destinations">تذاكر الطيران لجميع الوجهات</p>
+                            </div>
+                            <div class="feature-card" onclick="contactWhatsApp('تأجير السيارات')">
+                                <div class="feature-icon">
+                                    <i class="fas fa-car"></i>
+                                </div>
+                                <h4 data-ar="تأجير السيارات" data-en="Car Rental">تأجير السيارات</h4>
+                                <p data-ar="تأجير السيارات وخدمات النقل" data-en="Car rental and transportation services">تأجير السيارات وخدمات النقل</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="service-cta">
+                        <p data-ar="للحصول على استشارة مجانية أو لحجز رحلتك القادمة، لا تتردد في التواصل معنا." data-en="For a free consultation or to book your next trip, do not hesitate to contact us.">للحصول على استشارة مجانية أو لحجز رحلتك القادمة، لا تتردد في التواصل معنا.</p>
+                        <a href="index.html#contact" class="btn btn-primary" data-ar="تواصل معنا" data-en="Contact Us">تواصل معنا</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <img src="src/assets/images/link_group_logo_globe.png" alt="LINK GROUP">
+                    </div>
+                    <p data-ar="شريكك الموثوق في الخدمات المتنوعة والحلول المبتكرة" data-en="Your trusted partner in diverse services and innovative solutions">شريكك الموثوق في الخدمات المتنوعة والحلول المبتكرة</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 data-ar="روابط سريعة" data-en="Quick Links">روابط سريعة</h4>
+                    <ul>
+                        <li><a href="index.html#home" class="footer-link" data-ar="الرئيسية" data-en="Home">الرئيسية</a></li>
+                        <li><a href="index.html#services" class="footer-link" data-ar="الخدمات" data-en="Services">الخدمات</a></li>
+                        <li><a href="index.html#about" class="footer-link" data-ar="من نحن" data-en="About Us">من نحن</a></li>
+                        <li><a href="index.html#contact" class="footer-link" data-ar="تواصل معنا" data-en="Contact Us">تواصل معنا</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 data-ar="خدماتنا" data-en="Our Services">خدماتنا</h4>
+                    <ul>
+                        <li><a href="tourism.html" class="footer-link" data-ar="خدمات السياحة" data-en="Tourism Services">خدمات السياحة</a></li>
+                        <li><a href="education.html" class="footer-link" data-ar="خدمات تعليمية" data-en="Educational Services">خدمات تعليمية</a></li>
+                        <li><a href="investment.html" class="footer-link" data-ar="خدمات استثمارية" data-en="Investment Services">خدمات استثمارية</a></li>
+                        <li><a href="residency.html" class="footer-link" data-ar="تجهيز ملفات الإقامة" data-en="Residency Applications">تجهيز ملفات الإقامة</a></li>
+                        <li><a href="insurance.html" class="footer-link" data-ar="خدمات التأمينات" data-en="Insurance Services">خدمات التأمينات</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 data-ar="تواصل معنا" data-en="Contact Us">تواصل معنا</h4>
+                    <div class="social-links">
+                        <a href="https://wa.me/905360668950" target="_blank" class="social-link"><i class="fab fa-whatsapp"></i></a>
+                        <a href="mailto:linkgrouptr@gmail.com" class="social-link"><i class="fas fa-envelope"></i></a>
+                        <a href="https://www.facebook.com/search/top?q=LINK%20GROUP" target="_blank" class="social-link"><i class="fab fa-facebook"></i></a>
+                    </div>
+                    <div class="country-flags">
+                        <span class="flag">🇹🇷</span>
+                        <span class="flag">🇾🇪</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 LINK GROUP. <span data-ar="جميع الحقوق محفوظة" data-en="All rights reserved">جميع الحقوق محفوظة</span>.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button id="scroll-top" class="scroll-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="src/assets/js/script.js"></script>
+</body>
+</html>
+
+

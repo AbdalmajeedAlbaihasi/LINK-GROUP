@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LINK GROUP - تجهيز ملفات الإقامة</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@300;400;500;600;700&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="src/assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="container">
+                <div class="nav-brand">
+                    <img src="src/assets/images/link_group_logo_globe.png" alt="LINK GROUP" class="logo">
+                </div>
+                
+                <div class="nav-menu" id="nav-menu">
+                    <ul class="nav-list">
+                        <li class="nav-item">
+                            <a href="index.html#home" class="nav-link" data-ar="الرئيسية" data-en="Home">الرئيسية</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a href="#services" class="nav-link active" data-ar="الخدمات" data-en="Services">الخدمات</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="tourism.html" data-ar="خدمات السياحة" data-en="Tourism Services">خدمات السياحة</a></li>
+                                <li><a href="education.html" data-ar="خدمات تعليمية" data-en="Educational Services">خدمات تعليمية</a></li>
+                                <li><a href="investment.html" data-ar="خدمات استثمارية" data-en="Investment Services">خدمات استثمارية</a></li>
+                                <li><a href="residency.html" data-ar="تجهيز ملفات الإقامة" data-en="Residency Applications">تجهيز ملفات الإقامة</a></li>
+                                <li><a href="insurance.html" data-ar="خدمات التأمينات" data-en="Insurance Services">خدمات التأمينات</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a href="index.html#about" class="nav-link" data-ar="من نحن" data-en="About Us">من نحن</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="index.html#contact" class="nav-link" data-ar="تواصل معنا" data-en="Contact Us">تواصل معنا</a>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="nav-controls">
+                    <button class="lang-toggle" id="lang-toggle">
+                        <span class="lang-text">EN</span>
+                    </button>
+                    <button class="nav-toggle" id="nav-toggle">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="residency-details" class="service-details">
+            <div class="container">
+                    <h2 class="section-title" data-ar="خدمات الإقامة" data-en="Residency Services">خدمات الإقامة</h2>
+                
+                <!-- Image Gallery -->
+                <div class="service-gallery">
+                    <div class="gallery-main">
+                        <img src="src/assets/images/bb.jpeg" alt="خدمات الإقامة" class="gallery-main-image">
+                    </div>
+                    <div class="gallery-thumbnails">
+                        <img src="src/assets/images/aa.jpeg" alt="خدمات الهجرة" class="gallery-thumb active" onclick="changeMainImage(this)">
+                        <img src="src/assets/images/cc.jpeg" alt="خدمات الإقامة" class="gallery-thumb" onclick="changeMainImage(this)">
+                        <img src="src/assets/images/dd.jpeg" alt="تأشيرات الإقامة" class="gallery-thumb" onclick="changeMainImage(this)">
+                    </div>
+                </div>
+
+                <div class="service-content-enhanced">
+                    <div class="service-description">
+                        <p data-ar="نساعدك في الحصول على الإقامة والجنسية في أفضل الدول، مع تقديم استشارات قانونية متخصصة وخدمات متكاملة لضمان نجاح طلبك. فريقنا من الخبراء يرافقك في كل خطوة من خطوات الحصول على الإقامة الدائمة أو المؤقتة." data-en="We help you obtain residency and citizenship in the best countries, providing specialized legal consultations and comprehensive services to ensure the success of your application. Our team of experts accompanies you in every step of obtaining permanent or temporary residency.">نساعدك في الحصول على الإقامة والجنسية في أفضل الدول، مع تقديم استشارات قانونية متخصصة وخدمات متكاملة لضمان نجاح طلبك. فريقنا من الخبراء يرافقك في كل خطوة من خطوات الحصول على الإقامة الدائمة أو المؤقتة.</p>
+                    </div>
+
+                    <div class="service-features">
+                        <h3 data-ar="خدماتنا في الإقامة" data-en="Our Residency Services">خدماتنا في الإقامة</h3>
+                        <div class="features-grid">
+                            <div class="feature-card" onclick="contactWhatsApp('تأشيرات الإقامة')">
+                                <div class="feature-icon">
+                                    <i class="fas fa-passport"></i>
+                                </div>
+                                <h4 data-ar="تأشيرات الإقامة" data-en="Residence Visas">تأشيرات الإقامة</h4>
+                                <p data-ar="الحصول على تأشيرات الإقامة المؤقتة والدائمة" data-en="Obtaining temporary and permanent residence visas">الحصول على تأشيرات الإقامة المؤقتة والدائمة</p>
+                            </div>
+                            <div class="feature-card" onclick="contactWhatsApp('الجنسية')">
+                                <div class="feature-icon">
+                                    <i class="fas fa-flag"></i>
+                                </div>
+                                <h4 data-ar="الجنسية" data-en="Citizenship">الجنسية</h4>
+                                <p data-ar="المساعدة في الحصول على الجنسية الثانية" data-en="Assistance in obtaining second citizenship">المساعدة في الحصول على الجنسية الثانية</p>
+                            </div>
+                            <div class="feature-card" onclick="contactWhatsApp('الاستشارات القانونية')">
+                                <div class="feature-icon">
+                                    <i class="fas fa-file-contract"></i>
+                                </div>
+                                <h4 data-ar="الاستشارات القانونية" data-en="Legal Consultations">الاستشارات القانونية</h4>
+                                <p data-ar="استشارات قانونية متخصصة في قوانين الهجرة" data-en="Specialized legal consultations in immigration laws">استشارات قانونية متخصصة في قوانين الهجرة</p>
+                            </div>
+                            <div class="feature-card" onclick="contactWhatsApp('الإقامة الذهبية')">
+                                <div class="feature-icon">
+                                    <i class="fas fa-home"></i>
+                                </div>
+                                <h4 data-ar="الإقامة الذهبية" data-en="Golden Residence">الإقامة الذهبية</h4>
+                                <p data-ar="برامج الإقامة الذهبية عبر الاستثمار" data-en="Golden residence programs through investment">برامج الإقامة الذهبية عبر الاستثمار</p>
+                            </div>
+                            <div class="feature-card" onclick="contactWhatsApp('لم الشمل')">
+                                <div class="feature-icon">
+                                    <i class="fas fa-users"></i>
+                                </div>
+                                <h4 data-ar="لم الشمل" data-en="Family Reunification">لم الشمل</h4>
+                                <p data-ar="خدمات لم الشمل العائلي" data-en="Family reunification services">خدمات لم الشمل العائلي</p>
+                            </div>
+                            <div class="feature-card" onclick="contactWhatsApp('تجهيز ملفات الإقامة')">
+                                <div class="feature-icon">
+                                    <i class="fas fa-clipboard-check"></i>
+                                </div>
+                                <h4 data-ar="إعداد الملفات" data-en="File Preparation">إعداد الملفات</h4>
+                                <p data-ar="إعداد وتجهيز جميع الوثائق المطلوبة" data-en="Preparation and processing of all required documents">إعداد وتجهيز جميع الوثائق المطلوبة</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="service-cta">
+                        <p data-ar="للحصول على استشارة مجانية حول خيارات الإقامة المتاحة لك، تواصل معنا اليوم." data-en="For a free consultation about residency options available to you, contact us today.">للحصول على استشارة مجانية حول خيارات الإقامة المتاحة لك، تواصل معنا اليوم.</p>
+                        <a href="index.html#contact" class="btn btn-primary" data-ar="تواصل معنا" data-en="Contact Us">تواصل معنا</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <img src="https://via.placeholder.com/150x60/1A5276/FFFFFF?text=LINK+GROUP" alt="LINK GROUP">
+                    </div>
+                    <p data-ar="شريكك الموثوق في الخدمات المتنوعة والحلول المبتكرة" data-en="Your trusted partner in diverse services and innovative solutions">شريكك الموثوق في الخدمات المتنوعة والحلول المبتكرة</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 data-ar="روابط سريعة" data-en="Quick Links">روابط سريعة</h4>
+                    <ul>
+                        <li><a href="index.html#home" class="footer-link" data-ar="الرئيسية" data-en="Home">الرئيسية</a></li>
+                        <li><a href="index.html#services" class="footer-link" data-ar="الخدمات" data-en="Services">الخدمات</a></li>
+                        <li><a href="index.html#about" class="footer-link" data-ar="من نحن" data-en="About Us">من نحن</a></li>
+                        <li><a href="index.html#contact" class="footer-link" data-ar="تواصل معنا" data-en="Contact Us">تواصل معنا</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 data-ar="خدماتنا" data-en="Our Services">خدماتنا</h4>
+                    <ul>
+                        <li><a href="tourism.html" class="footer-link" data-ar="خدمات السياحة" data-en="Tourism Services">خدمات السياحة</a></li>
+                        <li><a href="education.html" class="footer-link" data-ar="خدمات تعليمية" data-en="Educational Services">خدمات تعليمية</a></li>
+                        <li><a href="investment.html" class="footer-link" data-ar="خدمات استثمارية" data-en="Investment Services">خدمات استثمارية</a></li>
+                        <li><a href="residency.html" class="footer-link" data-ar="تجهيز ملفات الإقامة" data-en="Residency Applications">تجهيز ملفات الإقامة</a></li>
+                        <li><a href="insurance.html" class="footer-link" data-ar="خدمات التأمينات" data-en="Insurance Services">خدمات التأمينات</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 data-ar="تواصل معنا" data-en="Contact Us">تواصل معنا</h4>
+                    <div class="social-links">
+                        <a href="https://wa.me/905360668950" target="_blank" class="social-link"><i class="fab fa-whatsapp"></i></a>
+                        <a href="mailto:linkgrouptr@gmail.com" class="social-link"><i class="fas fa-envelope"></i></a>
+                        <a href="https://www.facebook.com/search/top?q=LINK%20GROUP" target="_blank" class="social-link"><i class="fab fa-facebook"></i></a>
+                    </div>
+                    <div class="country-flags">
+                        <span class="flag">🇹🇷</span>
+                        <span class="flag">🇾🇪</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 LINK GROUP. <span data-ar="جميع الحقوق محفوظة" data-en="All rights reserved">جميع الحقوق محفوظة</span>.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button id="scroll-top" class="scroll-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script>
+        // Gallery functionality
+        function changeMainImage(thumbnail) {
+            const mainImage = document.querySelector('.gallery-main-image');
+            const thumbnails = document.querySelectorAll('.gallery-thumb');
+            
+            // Remove active class from all thumbnails
+            thumbnails.forEach(thumb => thumb.classList.remove('active'));
+            
+            // Add active class to clicked thumbnail
+            thumbnail.classList.add('active');
+            
+            // Change main image source
+            mainImage.src = thumbnail.src.replace('w=300', 'w=1000');
+        }
+
+        // Scroll to top functionality
+        const scrollTopBtn = document.getElementById('scroll-top');
+        
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 300) {
+                scrollTopBtn.classList.add('show');
+            } else {
+                scrollTopBtn.classList.remove('show');
+            }
+        });
+        
+        scrollTopBtn.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+
+        // Mobile menu toggle
+        const navToggle = document.getElementById('nav-toggle');
+        const navMenu = document.getElementById('nav-menu');
+        
+        navToggle.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
+

@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LINK GROUP - خدمات استثمارية</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@300;400;500;600;700&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="src/assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="container">
+                <div class="nav-brand">
+                    <img src="src/assets/images/link_group_logo_globe.png" alt="LINK GROUP" class="logo">
+                </div>
+                
+                <div class="nav-menu" id="nav-menu">
+                    <ul class="nav-list">
+                        <li class="nav-item">
+                            <a href="index.html#home" class="nav-link" data-ar="الرئيسية" data-en="Home">الرئيسية</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a href="#services" class="nav-link active" data-ar="الخدمات" data-en="Services">الخدمات</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="tourism.html" data-ar="خدمات السياحة" data-en="Tourism Services">خدمات السياحة</a></li>
+                                <li><a href="education.html" data-ar="خدمات تعليمية" data-en="Educational Services">خدمات تعليمية</a></li>
+                                <li><a href="investment.html" data-ar="خدمات استثمارية" data-en="Investment Services">خدمات استثمارية</a></li>
+                                <li><a href="residency.html" data-ar="تجهيز ملفات الإقامة" data-en="Residency Applications">تجهيز ملفات الإقامة</a></li>
+                                <li><a href="insurance.html" data-ar="خدمات التأمينات" data-en="Insurance Services">خدمات التأمينات</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a href="index.html#about" class="nav-link" data-ar="من نحن" data-en="About Us">من نحن</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="index.html#contact" class="nav-link" data-ar="تواصل معنا" data-en="Contact Us">تواصل معنا</a>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="nav-controls">
+                    <button class="lang-toggle" id="lang-toggle">
+                        <span class="lang-text">EN</span>
+                    </button>
+                    <button class="nav-toggle" id="nav-toggle">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="investment-details" class="service-details">
+            <div class="container">
+                 <h2 class="section-title" data-ar="خدمات الاستثمار" data-en="Investment Services">خدمات الاستثمار</h2>
+                
+                <!-- Image Gallery -->
+                <div class="service-gallery">
+                    <div class="gallery-main">
+                        <img src="src/assets/images/investment.jpg" alt="خدمات الاستثمار" class="gallery-main-image">
+                    </div>
+                    <div class="gallery-thumbnails">
+                        <img src="src/assets/images/business-investment.jpg" alt="الاستثمار التجاري" class="gallery-thumb active" onclick="changeMainImage(this)">
+                        <img src="src/assets/images/real-estate-investment.jpg" alt="الاستثمار العقاري" class="gallery-thumb" onclick="changeMainImage(this)">
+                        <img src="src/assets/images/investment.jpg" alt="إدارة الاستثمارات" class="gallery-thumb" onclick="changeMainImage(this)">
+                    </div>
+                </div>
+
+                <div class="service-content-enhanced">
+                    <div class="service-description">
+                        <p data-ar="نوفر فرص استثمارية متنوعة ومدروسة بعناية لضمان تحقيق أفضل العوائد. سواء كنت تبحث عن الاستثمار في العقارات، الأسهم، أو المشاريع التجارية، فإننا نقدم لك الخبرة والدعم اللازم لاتخاذ قرارات استثمارية ذكية." data-en="We provide diverse and carefully studied investment opportunities to ensure achieving the best returns. Whether you are looking to invest in real estate, stocks, or commercial projects, we provide you with the expertise and support needed to make smart investment decisions.">نوفر فرص استثمارية متنوعة ومدروسة بعناية لضمان تحقيق أفضل العوائد. سواء كنت تبحث عن الاستثمار في العقارات، الأسهم، أو المشاريع التجارية، فإننا نقدم لك الخبرة والدعم اللازم لاتخاذ قرارات استثمارية ذكية.</p>
+                    </div>
+
+                    <div class="service-features">
+                        <h3 data-ar="خدماتنا الاستثمارية" data-en="Our Investment Services">خدماتنا الاستثمارية</h3>
+                        <div class="features-grid">
+                            <div class="feature-card" onclick="contactWhatsApp('الاستثمار العقاري')">
+                                <div class="feature-icon">
+                                    <i class="fas fa-building"></i>
+                                </div>
+                                <h4 data-ar="الاستثمار العقاري" data-en="Real Estate Investment">الاستثمار العقاري</h4>
+                                <p data-ar="استثمارات عقارية مربحة في أفضل المواقع" data-en="Profitable real estate investments in the best locations">استثمارات عقارية مربحة في أفضل المواقع</p>
+                            </div>
+                            <div class="feature-card" onclick="contactWhatsApp('الاستثمار في الأسهم')">
+                                <div class="feature-icon">
+                                    <i class="fas fa-chart-line"></i>
+                                </div>
+                                <h4 data-ar="الاستثمار في الأسهم" data-en="Stock Investment">الاستثمار في الأسهم</h4>
+                                <p data-ar="إدارة محافظ الأسهم والاستثمارات المالية" data-en="Management of stock portfolios and financial investments">إدارة محافظ الأسهم والاستثمارات المالية</p>
+                            </div>
+                            <div class="feature-card" onclick="contactWhatsApp('الشراكات التجارية')">
+                                <div class="feature-icon">
+                                    <i class="fas fa-handshake"></i>
+                                </div>
+                                <h4 data-ar="الشراكات التجارية" data-en="Business Partnerships">الشراكات التجارية</h4>
+                                <p data-ar="فرص شراكة في مشاريع تجارية ناجحة" data-en="Partnership opportunities in successful commercial projects">فرص شراكة في مشاريع تجارية ناجحة</p>
+                            </div>
+                            <div class="feature-card" onclick="contactWhatsApp('الاستثمار الذهبي')">
+                                <div class="feature-icon">
+                                    <i class="fas fa-coins"></i>
+                                </div>
+                                <h4 data-ar="الاستثمار الذهبي" data-en="Gold Investment">الاستثمار الذهبي</h4>
+                                <p data-ar="استثمارات آمنة في المعادن الثمينة" data-en="Safe investments in precious metals">استثمارات آمنة في المعادن الثمينة</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="service-cta">
+                        <p data-ar="للحصول على استشارة استثمارية مجانية وتقييم الفرص المتاحة، تواصل معنا اليوم." data-en="For a free investment consultation and evaluation of available opportunities, contact us today.">للحصول على استشارة استثمارية مجانية وتقييم الفرص المتاحة، تواصل معنا اليوم.</p>
+                        <a href="index.html#contact" class="btn btn-primary" data-ar="تواصل معنا" data-en="Contact Us">تواصل معنا</a>
+                    </div>
+                </div>    </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <img src="src/assets/images/link_group_logo_globe.png" alt="LINK GROUP">
+                    </div>
+                    <p data-ar="شريكك الموثوق في الخدمات المتنوعة والحلول المبتكرة" data-en="Your trusted partner in diverse services and innovative solutions">شريكك الموثوق في الخدمات المتنوعة والحلول المبتكرة</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 data-ar="روابط سريعة" data-en="Quick Links">روابط سريعة</h4>
+                    <ul>
+                        <li><a href="index.html#home" class="footer-link" data-ar="الرئيسية" data-en="Home">الرئيسية</a></li>
+                        <li><a href="index.html#services" class="footer-link" data-ar="الخدمات" data-en="Services">الخدمات</a></li>
+                        <li><a href="index.html#about" class="footer-link" data-ar="من نحن" data-en="About Us">من نحن</a></li>
+                        <li><a href="index.html#contact" class="footer-link" data-ar="تواصل معنا" data-en="Contact Us">تواصل معنا</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 data-ar="خدماتنا" data-en="Our Services">خدماتنا</h4>
+                    <ul>
+                        <li><a href="tourism.html" class="footer-link" data-ar="خدمات السياحة" data-en="Tourism Services">خدمات السياحة</a></li>
+                        <li><a href="education.html" class="footer-link" data-ar="خدمات تعليمية" data-en="Educational Services">خدمات تعليمية</a></li>
+                        <li><a href="investment.html" class="footer-link" data-ar="خدمات استثمارية" data-en="Investment Services">خدمات استثمارية</a></li>
+                        <li><a href="residency.html" class="footer-link" data-ar="تجهيز ملفات الإقامة" data-en="Residency Applications">تجهيز ملفات الإقامة</a></li>
+                        <li><a href="insurance.html" class="footer-link" data-ar="خدمات التأمينات" data-en="Insurance Services">خدمات التأمينات</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 data-ar="تواصل معنا" data-en="Contact Us">تواصل معنا</h4>
+                    <div class="social-links">
+                        <a href="https://wa.me/905360668950" target="_blank" class="social-link"><i class="fab fa-whatsapp"></i></a>
+                        <a href="mailto:linkgrouptr@gmail.com" class="social-link"><i class="fas fa-envelope"></i></a>
+                        <a href="https://www.facebook.com/search/top?q=LINK%20GROUP" target="_blank" class="social-link"><i class="fab fa-facebook"></i></a>
+                    </div>
+                    <div class="country-flags">
+                        <span class="flag">🇹🇷</span>
+                        <span class="flag">🇾🇪</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 LINK GROUP. <span data-ar="جميع الحقوق محفوظة" data-en="All rights reserved">جميع الحقوق محفوظة</span>.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button id="scroll-top" class="scroll-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="src/assets/js/script.js"></script>
+</body>
+</html>
+
+
